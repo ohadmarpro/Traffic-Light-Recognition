@@ -168,12 +168,20 @@ traffic-light-detector/
 ```
 
 ---
+---
 
-## 🙋‍♂️ About Me
+## 👤 About Me
 
-Created by **Ohad Marhozi**, Electrical Engineering student with a focus on embedded systems, computer vision and deep learning. I built this system to explore modularity in vision pipelines and demonstrate how simple tools, when separated wisely, can outperform complex end-to-end models.
+**Ohad Marhozi**  
+Electrical Engineer specializing in embedded systems, computer vision, and deep learning.  
+Passionate about building modular, interpretable, and robust machine learning systems.
 
-For collaborations or questions, feel free to reach out!
+📧 Email: [ohadmarhozi@gmail.com](mailto:ohadmarhozi@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/ohad-marhozi-71b012276](https://www.linkedin.com/in/ohad-marhozi-71b012276)
+
+Feel free to reach out for questions, collaborations, or opportunities.
+
+
 
 ---
 
