@@ -149,19 +149,22 @@ They also expose how the model reacts to ambiguous or multi-colored inputs.
 
 ```
 traffic-light-detector/
-├── src/
-│   ├── detect_and_classify.py
-│   ├── yolo_pipeline.py
-│   └── classifier.py
-├── comparisons/
-│   ├── yolo_only/result_conf_08.png
-│   └── yolo_plus_cnn/result_conf_08.png
-├── models/
-│   └── best.pt  # YOLO weights
-├── runs/
-│   └── classified_outputs/  # annotated images
+├── YOLO_only/
+│   └── YOLO_ONLY_08.png
+├── YOLO_AND_CNN/
+│   ├── YOLOandCNN_08.png
+│   ├── CNN/
+│   │   ├── green.png
+│   │   ├── orange.png
+│   │   ├── red.png
+│   │   ├── red and orange.png
+│   │   ├── hotmap.py
+│   │   └── train_cnn_model.py
+├── imgsz.png
+├── download_models.py
 ├── requirements.txt
 └── README.md
+
 ```
 
 ---
