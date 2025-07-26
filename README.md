@@ -58,18 +58,36 @@ To address this, I built a **hybrid system** that mimics human behavior:
 | Flexibility             | Low                                  | High (modular)                 |
 | Interpretability        | Hard to debug                        | Easy to separate issues        |
 
----
+## 📷 Visual Comparison at Confidence Threshold = 0.8
 
-## 🖼️ Visual Results (conf threshold = 0.8)
-
-### 🔹 YOLO-only Example:
-![YOLO Only – conf=0.8](YOLO_only/result_conf_08.png)
-
-### 🔸 YOLO + CNN Example:
-![YOLO + CNN – conf=0.8](YOLO&CNN/result_conf_08.png)
-> The CNN-enhanced pipeline clearly performs better in edge cases, especially with occluded or dim signals.
+To evaluate both detection strategies under stricter confidence settings (conf = 0.8), we compared the output of YOLO-only vs. YOLO + CNN pipelines.  
+Higher confidence thresholds reduce false positives but often cause missed detections — highlighting model robustness.
 
 ---
+
+### 🔹 YOLO-Only Output
+
+In this example, the detection and classification are done inside YOLO.  
+You can see that some lights are missed or uncertain due to shape, distance, or lighting.
+
+![YOLO Only – conf=0.8](YOLO_only/YOLO_ONLY_08.png)
+
+---
+
+### 🔸 YOLO + CNN Output
+
+In this setup, YOLO detects traffic lights, and each crop is sent to a CNN for signal classification.  
+This modular separation improves robustness and reduces misclassification.
+
+![YOLO + CNN – conf=0.8](YOLO_AND_CNN/YOLOandCNN_08.png)
+
+---
+
+### 🎯 Observation
+
+At high confidence thresholds, the hybrid approach (YOLO + CNN) proves more reliable —  
+successfully identifying lights that YOLO alone either misses or mislabels.
+
 
 ## ▶ How to Run
 
