@@ -89,6 +89,26 @@ At high confidence thresholds, the hybrid approach (YOLO + CNN) proves more reli
 successfully identifying lights that YOLO alone either misses or mislabels.
 
 
+## 🖼️ Resolution Sensitivity: YOLO-only vs YOLO + CNN
+
+The following image compares how each model performs when input images are resized to different resolutions:  
+**1920 × 1080**, **1280 × 720**, **960 × 540**, and **640 × 360**.
+
+| Top row    → YOLO-only         | Bottom row    → YOLO + CNN |
+
+As input size decreases, detection becomes harder — especially for small traffic lights.
+
+![Resolution Comparison](imgsz.png)
+
+---
+
+### 📌 Insights
+
+- At higher resolutions (e.g., `imgsz=1920`), both models perform relatively well.
+- As resolution drops, **YOLO-only begins to miss or misclassify lights**, while **the hybrid model remains more stable** due to better local signal classification.
+- This demonstrates the **robustness of the modular approach**, especially under hardware constraints or video compression (e.g., dashcams, embedded systems).
+
+
 ## ▶ How to Run
 
 ```bash
