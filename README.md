@@ -121,18 +121,7 @@ You can download the trained models used in this project from the following link
 - **CNN traffic light classifier:**  
   [Download](https://drive.google.com/file/d/1UmoKKbhXeZbOfl3wLezBZYP-dC5opyml/view?usp=drive_link)
 
-  
-## ▶ How to Run
 
-```bash
-pip install -r requirements.txt
-python src/detect_and_classify.py --source your_video.mp4
-```
-
-* The script will run both YOLO and CNN stages.
-* Annotated video or frames will be saved in `outputs/`
-
----
 
 ## 📂 Project Structure
 
