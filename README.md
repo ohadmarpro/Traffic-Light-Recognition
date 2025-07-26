@@ -122,6 +122,28 @@ You can download the trained models used in this project from the following link
   [Download](https://drive.google.com/file/d/1UmoKKbhXeZbOfl3wLezBZYP-dC5opyml/view?usp=drive_link)
 
 
+## 🧠 CNN Heatmaps – Model Attention Visualization
+
+The following heatmaps show where the CNN classifier focuses when predicting the traffic light state.  
+They were generated using activation visualization techniques (e.g., Grad-CAM or feature maps) and help explain **how** the model makes its decision.
+
+<p align="center">
+  <img src="YOLO_AND_CNN/CNN/red.png" width="22%" title="Red">
+  <img src="YOLO_AND_CNN/CNN/orange.png" width="22%" title="Orange">
+  <img src="YOLO_AND_CNN/CNN/green.png" width="22%" title="Green">
+  <img src="YOLO_AND_CNN/CNN/red and orange.png" width="22%" title="Red & Orange">
+</p>
+
+<p align="center">
+  <b>Red</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Orange</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Green</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Red & Orange (ambiguous case)</b>
+</p>
+
+These visualizations highlight the **regions the CNN considers important** when classifying each signal.  
+They also expose how the model reacts to ambiguous or multi-colored inputs.
+
 
 ## 📂 Project Structure
 
