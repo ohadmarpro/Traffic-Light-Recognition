@@ -64,11 +64,11 @@ To address this, I built a **hybrid system** that mimics human behavior:
 
 ### 🔹 YOLO-only Example:
 
-![YOLO_Only – conf=0.8](Traffic-Light-Recognition/yolo_only/result_conf_08.png)
+![YOLO_Only – conf=0.8](Traffic-Light-Recognition/YOLO_only/result_conf_08.png)
 
 ### 🔸 YOLO + CNN Example:
 
-![YOLO&CNN – conf=0.8](Traffic-Light-Recognition/yolo&cnn/result_conf_08.png)
+![YOLO&CNN – conf=0.8](Traffic-Light-Recognition/YOLO&CNN/result_conf_08.png)
 
 > The CNN-enhanced pipeline clearly performs better in edge cases, especially with occluded or dim signals.
 
