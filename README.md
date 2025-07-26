@@ -108,7 +108,20 @@ As input size decreases, detection becomes harder — especially for small traff
 - As resolution drops, **YOLO-only begins to miss or misclassify lights**, while **the hybrid model remains more stable** due to better local signal classification.
 - This demonstrates the **robustness of the modular approach**, especially under hardware constraints or video compression (e.g., dashcams, embedded systems).
 
+## 📦 Download Pretrained Models
 
+You can download the trained models used in this project from the following links:
+
+- **YOLOv8 – all COCO classes:**  
+  [Download](https://drive.google.com/file/d/1JFyOcf-URedVqBN75cJy-uJvGmTDCD27/view?usp=drive_link)
+
+- **YOLOv8 – traffic light detector only:**  
+  [Download](https://drive.google.com/file/d/1qMRlc7DgiwvgdTSmahEFlCb2MmKha3Ti/view?usp=drive_link)
+
+- **CNN traffic light classifier:**  
+  [Download](https://drive.google.com/file/d/1UmoKKbhXeZbOfl3wLezBZYP-dC5opyml/view?usp=drive_link)
+
+  
 ## ▶ How to Run
 
 ```bash
